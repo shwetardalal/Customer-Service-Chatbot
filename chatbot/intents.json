@@ -1,0 +1,259 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hi there",
+                "Hey, good morning",
+                "Good afternoon",
+                "Good evening, can you help me",
+                "Is anyone available to help",
+                "I need some help please",
+                "How is it going",
+                "Greetings",
+                "Hi, I have a question"
+            ],
+            "responses": [
+                "Hello! I'm here to help. What can I do for you today?",
+                "Hi there! How may I assist you?",
+                "Welcome! Tell me what you need help with and I'll do my best."
+            ]
+        },
+        {
+            "tag": "working_hours",
+            "patterns": [
+                "What are your working hours",
+                "When are you open",
+                "What time do you provide customer support",
+                "When can I reach your support team",
+                "Are you open on weekends",
+                "What time do you close today",
+                "Is customer service available after work",
+                "Do you offer support on Saturdays",
+                "What are your business hours",
+                "When does your office open",
+                "Can I talk to someone outside business hours",
+                "Are you open today"
+            ],
+            "responses": [
+                "Our customer-service team is available Monday to Friday, 9:00 AM to 6:00 PM. We're closed on public holidays.",
+                "You can reach our support team on weekdays from 9 AM to 6 PM. Leave us a message outside those hours and we'll follow up.",
+                "We're open Monday through Friday, 9:00 AM–6:00 PM. Weekend support isn't available at the moment."
+            ]
+        },
+        {
+            "tag": "pricing",
+            "patterns": [
+                "How much does it cost",
+                "What are your prices",
+                "Can you tell me the pricing",
+                "How much do your services cost",
+                "Where can I see your rates",
+                "Do you have a price list",
+                "What is the monthly fee",
+                "Are there any extra charges",
+                "How much will I be charged",
+                "Do you offer discounts",
+                "What does the basic plan cost",
+                "Can you explain your subscription plans"
+            ],
+            "responses": [
+                "Our plans and current prices are listed on the Pricing page. If you tell me which service you're interested in, I can point you to the right option.",
+                "Pricing depends on the service and plan. Please visit the Pricing page for the latest rates, or contact our team for a tailored quote.",
+                "I can help with that! Our Pricing page has the current plan details, included features, and any applicable fees."
+            ]
+        },
+        {
+            "tag": "product_info",
+            "patterns": [
+                "What products do you offer",
+                "Tell me about your services",
+                "What does your product do",
+                "Can you explain the features",
+                "I would like more information about your service",
+                "What is included in the package",
+                "How does your service work",
+                "Do you have a product catalogue",
+                "Which services are available",
+                "Can I learn more about the product",
+                "What features come with this plan",
+                "Do you provide installation or setup",
+                "I want to know about the services which you are going to provide",
+                "What services do you provide",
+                "Can you tell me which services you offer",
+                "What kind of service can I get from your company"
+            ],
+            "responses": [
+                "We offer a range of products and services to fit different needs. Tell me which one you're considering and I can share more relevant details.",
+                "You can find feature lists and service descriptions on our Products page. If you have a specific question, ask away!",
+                "Our services include product access, setup guidance, and customer support. Let me know what you'd like to know more about."
+            ]
+        },
+        {
+            "tag": "order_status",
+            "patterns": [
+                "Where is my order",
+                "Can I track my package",
+                "How do I check my order status",
+                "My order has not arrived yet",
+                "When will my delivery arrive",
+                "I need an update on my shipment",
+                "How can I track a delivery",
+                "Has my purchase shipped",
+                "Can you tell me when my order will be delivered",
+                "My tracking number is not working",
+                "I want to know the status of my purchase",
+                "Is my package on its way"
+            ],
+            "responses": [
+                "You can check the latest update using the tracking link in your order-confirmation email. If it isn't there, contact support with your order number.",
+                "I'm sorry you're waiting. Please use the tracking link from your shipping email, or share your order number with our support team for help.",
+                "For an order update, check your account's Orders page or the tracking email. Our team can investigate delays if you provide the order number."
+            ]
+        },
+        {
+            "tag": "refund",
+            "patterns": [
+                "I want a refund",
+                "How do I get my money back",
+                "Can I return this and get a refund",
+                "Please refund my purchase",
+                "What is your refund policy",
+                "I would like to request a reimbursement",
+                "I am unhappy and want my payment returned",
+                "How long does a refund take",
+                "Can you help me return an item",
+                "I need to send this back",
+                "Where do I submit a refund request",
+                "Can I get a refund for my order"
+            ],
+            "responses": [
+                "I'm sorry it didn't work out. To request a refund, contact our support team with your order number. Refund eligibility and timing depend on the purchase terms.",
+                "You can start a return or refund request through your account's Orders page. Include your order number so our team can review it quickly.",
+                "We can help with that. Please share your order number with customer support, and they'll explain the return steps and applicable refund timeline."
+            ]
+        },
+        {
+            "tag": "cancellation",
+            "patterns": [
+                "I want to cancel my order",
+                "How can I cancel my subscription",
+                "Please stop my order before it ships",
+                "I need to cancel a purchase",
+                "Can I end my membership",
+                "Where can I cancel my plan",
+                "I no longer want this service",
+                "How do I terminate my subscription",
+                "Can you cancel my booking",
+                "I want to discontinue my account",
+                "Please cancel my recent order",
+                "What is the cancellation process"
+            ],
+            "responses": [
+                "You can request a cancellation from your account's Orders or Subscription page. If an order has already shipped, contact support to review your options.",
+                "I'm happy to point you in the right direction. Contact customer support with your order or subscription number to confirm whether it can still be cancelled.",
+                "To cancel, open your account settings and choose Manage subscription, or contact support with the details of the order you want to stop."
+            ]
+        },
+        {
+            "tag": "complaint",
+            "patterns": [
+                "I want to make a complaint",
+                "I am unhappy with the service",
+                "This has been a frustrating experience",
+                "I have a problem with my purchase",
+                "Your service did not meet my expectations",
+                "I need to report an issue",
+                "I am disappointed with the support I received",
+                "Something went wrong with my order",
+                "I would like to speak to a manager",
+                "I want to report poor service",
+                "This product is not working properly",
+                "Where can I submit feedback about a problem"
+            ],
+            "responses": [
+                "I'm sorry you've had a frustrating experience. Please tell me what happened, and our support team can investigate and work toward a solution.",
+                "Thank you for letting us know. You can share the details and your order number with customer support so we can review the issue.",
+                "I'm sorry we let you down. Our team takes complaints seriously—please contact support with a few details and we'll help from there."
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "How can I contact you",
+                "What is your email address",
+                "Can I call customer support",
+                "Where can I speak to a real person",
+                "How do I get in touch with your team",
+                "Do you have a phone number",
+                "I need the customer service contact details",
+                "Where is your contact page",
+                "Can someone from support call me",
+                "How can I reach a human agent",
+                "Please give me your support email",
+                "What is the best way to contact customer service"
+            ],
+            "responses": [
+                "You can reach our support team through the Contact page on our website. Include your order number if your question is about a purchase.",
+                "Please use the contact form on our website to reach a customer-service representative. Our team will reply during business hours.",
+                "Our support team can be reached from the Contact page. Add a brief description of the issue so the right person can help."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks for your help",
+                "I appreciate it",
+                "That was helpful, thanks",
+                "Thanks a lot",
+                "I am grateful for your assistance",
+                "Great, thank you so much",
+                "Many thanks for the information",
+                "Perfect, that answers my question",
+                "Cheers, I appreciate the help"
+            ],
+            "responses": [
+                "You're very welcome! Let me know if there's anything else I can help with.",
+                "Happy to help! Is there anything else you'd like to know?",
+                "You're welcome, and thanks for reaching out."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Goodbye",
+                "Bye for now",
+                "See you later",
+                "I have to go now",
+                "Talk to you soon",
+                "Have a nice day",
+                "That's all, bye",
+                "Thanks, I am leaving now",
+                "Take care",
+                "End this conversation"
+            ],
+            "responses": [
+                "Goodbye! Have a great day.",
+                "Thanks for chatting with us. Take care!",
+                "Bye! We're here if you need help again."
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [
+                "Tell me a joke",
+                "What is the weather today",
+                "Explain quantum physics",
+                "Who won the football game",
+                "Write a poem about the ocean"
+            ],
+            "responses": [
+                "I'm not sure I understood that. I can help with orders, refunds, pricing, products, and other customer-service questions.",
+                "I don't have enough information to answer that yet. Could you rephrase it as a question about our products or support?",
+                "Sorry, I didn't catch that. Try asking about working hours, an order, a refund, or how to contact us."
+            ]
+        }
+    ]
+}

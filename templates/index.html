@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f7fb">
+    <meta name="description" content="Get quick answers to common customer service questions.">
+    <title>Customer Care | Support Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <main class="app-shell">
+        <aside class="intro-panel" aria-label="Customer care information">
+            <div class="brand-lockup">
+                <div class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-2v-6h4M4 13h4v6H6a2 2 0 0 1-2-2v-4Z" />
+                    </svg>
+                </div>
+                <span>northstar<span class="brand-dot">.</span></span>
+            </div>
+            <div class="intro-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> HERE WHEN YOU NEED US</p>
+                <h1>Good support<br>starts with a<br><span>conversation.</span></h1>
+                <p class="intro-description">Quick answers, a little guidance, and a real team ready to help when you
+                    need more.</p>
+            </div>
+            <div class="support-card">
+                <div class="support-card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 8v4l2.7 1.7M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </div>
+                <div><strong>We're here for you</strong><span>Monday – Friday, 9am – 6pm</span></div>
+                <span class="online-indicator" aria-label="Support is online"></span>
+            </div>
+            <div class="intro-footer"><span>Thoughtful help, every step of the way.</span><span class="footer-sparkle"
+                    aria-hidden="true">✳</span></div>
+        </aside>
+
+        <section class="chat-panel" aria-label="Customer support chat">
+            <header class="chat-header">
+                <div class="agent-avatar" aria-hidden="true"><span>N</span><i></i></div>
+                <div class="agent-details">
+                    <h2>Northstar support</h2>
+                    <p><span class="status-dot"></span> Online · typically replies instantly</p>
+                </div>
+                <button class="clear-button" id="clearChat" type="button" aria-label="Clear chat history"
+                    title="Clear chat">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16M10 11v6m4-6v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                    </svg>
+                    <span>Clear chat</span>
+                </button>
+            </header>
+
+            <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions">
+                <div class="day-divider"><span>Today</span></div>
+                <article class="message-row bot-row">
+                    <div class="message-avatar" aria-hidden="true">N</div>
+                    <div class="message-content">
+                        <div class="message-bubble bot-bubble">
+                            <p>Hi there! 👋 Welcome to Northstar. I'm your support assistant—what can I help you with
+                                today?</p>
+                        </div><time class="message-time">Just now</time>
+                    </div>
+                </article>
+                <div class="suggestions" aria-label="Suggested questions">
+                    <span class="suggestions-label">A few things I can help with</span>
+                    <div class="suggestion-list">
+                        <button type="button" class="suggestion-chip">Track an order <span
+                                aria-hidden="true">↗</span></button>
+                        <button type="button" class="suggestion-chip">View pricing <span
+                                aria-hidden="true">↗</span></button>
+                        <button type="button" class="suggestion-chip">Talk to support <span
+                                aria-hidden="true">↗</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="composer" id="chatForm" autocomplete="off">
+                <label class="sr-only" for="messageInput">Type your message</label>
+                <textarea id="messageInput" name="message" rows="1" maxlength="1000" placeholder="Write your message..."
+                    required></textarea>
+                <div class="composer-footer"><span class="input-hint">Press <kbd>Enter</kbd> to send · <kbd>Shift +
+                            Enter</kbd> for a new line</span>
+                    <button class="send-button" type="submit" id="sendButton"><span>Send</span><svg viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="m5 12 14-7-4 14-3-6-7-1Zm7 1 7-8" />
+                        </svg></button>
+                </div>
+            </form>
+            <footer class="chat-footnote"><span class="lock-icon" aria-hidden="true">✦</span> Your conversation is
+                private and secure</footer>
+        </section>
+    </main>
+</body>
+
+</html>
